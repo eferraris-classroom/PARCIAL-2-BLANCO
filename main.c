@@ -3,9 +3,11 @@
 #include "helper.h"
 #define TAM1 30
 #define TAM2 20
+
 //3. Defina una función que realice una búsqueda secuencial en todos los registros de un archivo, hasta encontrar un
 // registro con una llave dada. Para eso necesitará de una función canónica de la forma char * funcionCanonica(Registro *).
 // Suponga que el archivo contiene información asociada a clientes de una empresa (DNI, nombre, apellido, etc.).
+
 int main() {
 
     Registro personas[TAM1] = {
@@ -24,10 +26,24 @@ int main() {
             {"Ramon", "Ramire", 1523452345},
             {"Esteban", "Esteve", 1545611234},
             {"Fernando", "Fernande", 1578944534},
+            {"Matias", "Mate", 1545664444},
+            {"Ramiro", "Renat", 1112311231},
+            {"Carolina", "Herrer", 1132133213},
+            {"Raon", "Ramirez", 1523452345},
+            {"Eseban", "Estevez", 1545611234},
+            {"Fenando", "Fernandez", 1578944534},
+            {"Mtias", "Mateo", 1545664444},
+            {"Rairo", "Renato", 1112311231},
+            {"Caolina", "Herrera", 1132133213},
+            {"Ramon", "Ramiez", 1523452345},
+            {"Esteban", "Esevez", 1545611234},
+            {"Fernando", "Fenandez", 1578944534},
+            {"Matias", "Maeo", 1545664444},
+            {"Ramiro", "Rnato", 1112311231},
             {"Carolina", "Herera", 1132133213}
     };
 
-    FILE *fPersonas= fopen("../personas.db", "rb");
+    FILE *fPersonas;
     escritura(personas, fPersonas);
     lectura (fPersonas);
 

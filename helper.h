@@ -10,7 +10,7 @@
 typedef struct registro {
     char nombre[TAM2];
     char apellido[TAM2];
-    int celular;
+    int dni;
 } Registro;
 
 void escritura (Registro[], FILE*);

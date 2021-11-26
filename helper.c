@@ -9,7 +9,7 @@
 
 void escritura(Persona p[TAM1],FILE * archivo){
 
-    archivo = fopen("personas.txt","wb");
+    archivo = fopen("personas.dat","ab");
     if (archivo==NULL){
         printf("Error, no se pudo escribir");
         exit(1);
